@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignmnet 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+
+        // Assignment 1(i) 
+        
+        var arr = new Array();
+        var size = prompt("Enter the size of your array...");
+
+        for(var i = 0; i < size; i++) {
+            arr[i] = prompt('Enter the  Element');
+        }
+
+        // Displaying the array using normal for loop  
+
+        document.write('<ul type = square>');
+        for(var i = 0; i < size; i++) {
+            document.write("<li>"+arr[i] + "</li>");
+        }
+        document.write('</ul>');
+
+        // Displaying the Array using for each loop 
+
+        document.write("</br><b>**************************</b>");
+
+        document.write('<ul type = circle>');
+        arr.forEach(e =>{
+            document.write("<li>"+e + "</li>");
+        });
+        document.write('</ul>');
+
+   
+        // Searching at a Index
+
+        // var elementToSearch = prompt("Enter the element you want to search for:");
+        // var index = arr.indexOf(elementToSearch);
+
+        //     if (index !== -1) {
+        //         document.write("<br>*************************<br>");
+        //         document.write("Element '" + elementToSearch + "' found at index: " + index);
+        //     } else {
+        //         document.write("<br>*************************<br>");
+        //         document.write("Element '" + elementToSearch + "' not found in the array.");
+        //     }
+        
+        // Sorting the array
+
+        document.write("<br>*************************<br>");
+
+        arr.sort();
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment 1</title>
+</head>
+
+<body>
+
+    <script>
+
+        function calculateLength(str) {
+            var length = str.length;
+            document.write('The length of the string is ' + length);
+        }
+
+        function convertToUpperCase(str) {
+            var upperCase = str.toUpperCase();
+            document.write('The string in uppercase is ' + upperCase);
+        }
+
+        function convertToLowerCase(str) {
+            var lowerCase = str.toLowerCase();
+            document.write('The string in lowercase is ' + lowerCase);
+        }
+
+        function searchInString(str) {
+            for (var i = 0; i < str.length; i++) {
+                if (str.charAt(i) == 'w') {
+                    document(" W is present at Index : " + i);
+                    //return true;
+                }
+                else
+                    document.write(" Not Found !!! ")
+            }
+        }
+
+        function codePresentAt4(str) {
+            document.write(str.charCodeAt(3));
+        }
+
+        function concatinationStr(str1, str2){
+            document.write(str1.concat(str2));
+        }
+
+        function splittingWords(str1){
+            var words = str1.split(" ");
+            document.write(words.join());
+        }
+
+    </script>
+
+    <form>
+        <label for='name'>Enter string 1:</label>
+        <input type='text' id="name1" name="str1"/>
+        </br>
+        <label for='name2'>Enter string 2:</label>
+        <input type='text' id="name2" name="str2"/>
+        </br>
+        <button onclick='calculateLength(str.value)'>Calculate length</button>
+        </br>
+        <button onclick='convertToUpperCase(str.value)'>Convert to Upper Case</button>
+        </br>
+        <button onclick='convertToLowerCase(str.value)'>Convert to Lower Case</button>
+        </br>
+        <button onclick='codePresentAt4(str.value)'>At 4</button>
+        </br>
+        <button onclick='concatinationStr(str1.value, str2.value)'>Conactinate</button>
+    </br>
+    <button onclick='splittingWords(str1.value)'>Split</button>
+    </form>
+
+</body>
+
+</html>

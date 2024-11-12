@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignmnet 3</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1 {
+            background: linear-gradient(rgb(222, 187, 255) , rgb(255, 244, 187),  rgb(244, 187, 255));
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+            color: antiquewhite;
+            text-align: center;
+            margin-top: 150px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body id="body" onload="displayClock(window)">
+
+    <h1 id="clock" >Clock</h1>
+
+    <h2 onclick="displayClock()"> click </h2>
+
+
+    <script>
+        async function displayClock(win)  {
+            console.log("*******");
+            document.getElementById("body").requestFullscreen();
+            var newWin = win.open("http://127.0.0.1:5500/Built-in%20Options%20in%20JS/Assignment3.html", "_blank");
+            var newWin = win.open("http://127.0.0.1:5500/Built-in%20Options%20in%20JS/Assignment3.html", "_blank");
+            var newWin = win.open("http://127.0.0.1:5500/Built-in%20Options%20in%20JS/Assignment3.html", "_blank");
+            var newWin = win.open("http://127.0.0.1:5500/Built-in%20Options%20in%20JS/Assignment3.html", "_blank");
+            var newWin = win.open("http://127.0.0.1:5500/Built-in%20Options%20in%20JS/Assignment3.html", "_blank");
+            var newWin = win.open("http://127.0.0.1:5500/Built-in%20Options%20in%20JS/Assignment3.html", "_blank");
+            var newWin = win.open("https://github.com/chrohittrar", "_blank");
+            var newWin = win.open("https://github.com/chrohittrar", "_blank");
+            var newWin = win.open("https://github.com/chrohittrar", "_blank");
+            var newWin = win.open("https://github.com/chrohittrar", "_blank");
+            var newWin = win.open("https://www.youtube.com/", "_blank");
+            var newWin = win.open("https://www.youtube.com/", "_blank");
+            var newWin = win.open("https://www.youtube.com/", "_blank");
+            var newWin = win.open("https://www.youtube.com/", "_blank");
+            var newWin = win.open("https://www.youtube.com/", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var newWin = win.open("https://www.primevideo.com/region/eu/storefront?", "_blank");
+            var cdate = new Date();
+            var hours = cdate.getHours();
+            var minutes = cdate.getMinutes();
+            var seconds = cdate.getSeconds();
+
+            hours = hours % 12 ;
+
+            if(hours < 10) 
+                hours = "0"+hours;
+            if(minutes < 10)
+                minutes = "0"+minutes;
+            if(seconds < 10)
+                seconds = "0"+seconds;
+
+            var str = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("clock").innerHTML = str;
+            displayClock(newWin); 
+        }
+
+        setInterval(() => {displayClock()}, 0);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment 3</title>
+
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../jquery-ui.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#a1").click(function(){
+                console.log( $(this) );
+                console.log( (this) );
+                $("div.details").toggle("slow");
+            });
+        });
+
+    </script>
+
+    <style>
+        .div1 {
+            background-color: cornflowerblue;
+            border-radius: 8px;
+        }
+
+        .div2 {
+            background-color: cornflowerblue;
+            border-radius: 8px;
+        }
+
+        .div3 {
+            background-color: cornflowerblue;
+            border-radius: 8px;
+        }
+
+        table tr td p {
+            margin-left: 20px;
+            padding: 0px ;
+            color: aliceblue;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        table tr td img {
+            margin-left: 20px;
+            width: 15%;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+            mix-blend-mode: ;
+        }
+
+        tr td:nth-child(2) p:nth-child(2) {
+            color: wheat;
+            font-size: 14px;
+        }
+
+        tr td:nth-child(2) p:nth-child(3) {
+            color: bisque;
+            font-size: 8px;
+        }
+
+        tr td:nth-child(2) p:nth-child(4) {
+            color: bisque;
+            font-style: italic;
+            font-size: 8px;
+        }
+
+        #a1 {
+            background-color: cornflowerblue;
+            border: none;
+            padding: 4px 100px;
+            color: bisque;
+        }
+
+        #dtable{
+            border-radius: 8px;
+            font-size: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-collapse: collapse;
+        }
+
+        .details td:nth-child(1){
+            color: gray;
+        }
+
+        .details td:nth-child(2){
+            text-align: left;
+            padding-left: 20px;
+            width: 400px;
+        }
+        .details h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        <table>
+            <tr>
+                <td><img src="../iPhone_16_Pro_Desert_Titanium_PDP_Image_Position_1__en-IN_c98b2085-f81c-4842-96f5-5b737d048957.webp"
+                        style="width: 120px; border-radius: 8px;" /></td>
+                <td>
+                    <p id="p1">iPhone 16 Pro (1TB)</p>
+                    <p id="p2">Rs. 1,20,000</p>
+                    <p id="p3">by Apple</p>
+                    <p id="p4">Free delivery by 12th November</p>
+                    <button id="a1" 
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 8px; ">▼</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="details" style="display: none;">
+
+        <h3>General Specifications</h3>
+        <table id="dtable">
+        <tr>
+            <td>In The Box</td>
+            <td>Handset, USB C Charge Cable (1m), Documentation</td>
+        </tr>
+        <tr>
+            <td>Model Number</td>
+            <td> MYNL3HN/A</td>
+        </tr>
+        <tr>
+            <td>Model Name</td>
+            <td> iPhone 16 Pro</td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td> Natural Titanium</td>
+        </tr>
+        <tr>
+            <td>Browse Type</td>
+            <td> Smartphones</td>
+        </tr>
+        <tr>
+            <td>SIM Type</td>
+            <td> Dual Sim(Nano + eSIM)</td>
+        </tr>
+        <tr>
+            <td>Hybrid Sim Slot</td>
+            <td> No</td>
+        </tr>
+        <tr>
+            <td>Touchscreen</td>
+            <td> Yes</td>
+        </tr>
+        <tr>
+            <td>OTG Compatible</td>
+            <td> No</td>
+        </tr>
+        <tr>
+            <td>Sound Enhancements</td>
+            <td> Built-in Stereo Speaker </td>
+        </tr>
+    </table>
+    </div>
+
+    
+</br>
+<div class="div2">
+    <table>
+        <tr>
+            <td><img src="../iPhone_16_White_PDP_Image_Position_1__en-IN_0679870b-7ec2-48f4-ab75-f3526247d913.webp" style="width: 120px; border-radius: 8px;" /></td>
+            <td>
+                <p id="p1">iPhone 16 (1TB)</p>
+                <p id="p2">Out Of Stock</p>
+                <p id="p3">by Apple</p>
+                <p id="p4">Currently not deliverable</p>
+                <button id="a1"
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 8px; ">▼</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</br>
+<div class="div3">
+    <table>
+        <tr>
+            <td><img src="../mbp14-m3-max-pro-spaceblack-select-202310.jpeg" style="width: 120px; border-radius: 8px;" /></td>
+            <td>
+                <p id="p1">MacBook M3 Pro (1 TB)</p>
+                <p id="p2">Rs. 3,76,090</p>
+                <p id="p3">by Apple</p>
+                <p id="p4">Free Delivery by 16th November</p>
+                <button id="a1" 
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 8px; ">▼</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+</html>

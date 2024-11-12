@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <style>
+        .content{
+            background-color: bisque;
+        }
+        .content > .content2 > button{
+            background-color: rgb(38, 192, 216);
+            border-radius: 6px;
+            border: 2px solid rgb(156, 172, 175); 
+        }
+
+    </style>
+
+
+    <script>
+        $(document).ready(function () {
+            //confirm("Web Page is Ready. Press OK to continue.");
+            $("#show").click(function () {
+                $("#image").show("slow");
+            });
+
+            $("#hide").click(function () {
+                $("#image").hide("slow");
+            });
+
+            $("#toggle").click(function () {
+                $("#image").toggle("slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="content">
+        <img id="image" src="./Screenshot 2024-10-25 230438.png" style="width: 500px; height:300px; display: none;" />
+        </br>
+        <div class="content2">
+            <button id="show">Show Image</button>
+            <button id="hide">Hide Image</button>
+            <button id="toggle">Toggle Image</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

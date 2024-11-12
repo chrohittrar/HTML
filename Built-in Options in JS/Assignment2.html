@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignmnet 2</title>
+    
+</head>
+<body>
+
+    <form>
+        <label for='date' >Date of Birth</label>
+        <input type='date' id="date" name="dob" /> 
+        </br>
+        <button onclick='showDate(dob.value)'>Show Date/Month/Year</button>
+        </br>
+        <button onclick='giveAge(dob.value)'>Show Age</button>
+    </form>
+
+    <script>
+
+        function showDate(dob){
+            var cdate = new Date(dob);
+            console.log(cdate);
+            var dd = cdate.getDate();
+            var mm = cdate.getMonth()+1;
+            var yy = cdate.getFullYear();
+            document.write("</br>Date is : "+ dd +" Month is : "+ mm+ " Year is : "+ yy)
+        }
+
+        function giveAge(dob){
+            var udate = new Date(dob);
+            var cdate = new Date();
+
+            var age =  cdate.getFullYear() - udate.getFullYear();
+
+            if(cdate.getMonth() < udate.getMonth() || ((cdate.getMonth == udate.getMonth) && (cdate.getDate < udate.getDate)))
+            {
+                age = age - 1;
+            }
+
+            document.write("DOB is : "+ age)
+        }
+
+    </script>
+    
+</body>
+</html>
